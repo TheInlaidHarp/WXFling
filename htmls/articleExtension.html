@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>甩单</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <link rel="stylesheet" href="../css/articleExtension.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+
+  </head>
+  <body>
+    <!-- page集合的容器，里面放多个平行的.page，其他.page作为内联页面由路由控制展示 -->
+   <div class="page-group">
+       <!-- 单个page ,第一个.page默认被展示-->
+       <div class="page" id="page-fixed-tab-infinite-scroll">
+           <!-- 这里是页面内容区 -->
+           <div class="content">
+                <!-- 标签的主题 -->
+                <div class="tagPagShow clearfix" id="tagPagShow">
+                     <a href="" ><span class="underline">全部</span></a>
+                     <a href=""><span>信贷经验</span></a>
+                     <a href=""><span>新闻</span></a>
+                     <a href=""><span>热点时事</span></a>
+                     <a href="" class="more" id="more"><span>更多</span></a>
+                </div>
+
+                <!-- 隐藏标签的主题 -->
+                <div class="tagPagHid clearfix" id="tagPagHid">
+                      <a href="#t1"><span class="underline">全部</span></a>
+                      <a href="#t2"><span>信贷经验</span></a>
+                      <a href="#t3"><span>新闻</span></a>
+                      <a href=""><span>新闻</span></a>
+                      <a href=""><span>全部</span></a>
+                      <a href=""><span>新闻</span></a>
+                      <a href=""><span>新闻</span></a>
+                      <a href=""><span>热点时事</span></a>
+                      <a class="more" id="hid"><span>收起</span></a>
+                </div>
+
+                <!-- 搜索栏 -->
+                <div class="content-padded ">
+                      <div class="searchbar row">
+                            <div class="search-input col-80">
+                                  <label class="icon icon-search" for="search"></label>
+                                  <input type="search" id='search' placeholder='输入关键字...'/>
+                            </div>
+                            <a class="button button-fill button-primary col-20">搜索</a>
+                      </div>
+                </div>
+
+                <!-- 标签页的内容部分 -->
+                <div class="content-padded resetpadding" id="switchContent">
+                    <div id='t1' class="panel-box delicious-food show infinite-scroll" style="padding-bottom:2rem;">
+                      <ul class="list-container">
+                            <div class="fill"></div>
+                            <li class="clearfix">
+                                  <img src="../imgs/homePage-01.jpg">
+                                  <div class="cont">
+                                        <div class="cont-inner">
+                                              <p>生姜是日常生活中十分常见的调料，生虽然作为调味料，生姜出...</p>
+                                              <div class="cont-footer">
+                                                    <span class="">2012-10-02 15:30</span>
+                                                    <span class="num pull-right">188 转发</span>
+                                                    <span class="pull-right">1229 浏览</span>
+                                              </div>
+                                       </div>
+                                  </div>
+                            </li>
+                            <div class="fill"></div>
+                            <li class="clearfix">
+                                  <img src="../imgs/homePage-01.jpg">
+                                  <div class="cont">
+                                        <div class="cont-inner">
+                                              <p>生姜是日常生活中十分常见的调料，生虽然作为调味料，生姜出...</p>
+                                              <div class="cont-footer">
+                                                    <span class="">2012-10-02 15:30</span>
+                                                    <span class="num pull-right">188 转发</span>
+                                                    <span class="pull-right">1229 浏览</span>
+                                              </div>
+                                       </div>
+                                  </div>
+                            </li>
+                            <div class="fill"></div>
+                            <li class="clearfix">
+                                  <img src="../imgs/homePage-01.jpg">
+                                  <div class="cont">
+                                        <div class="cont-inner">
+                                              <p>生姜是日常生活中十分常见的调料，生虽然作为调味料，生姜出...</p>
+                                              <div class="cont-footer">
+                                                    <span class="">2012-10-02 15:30</span>
+                                                    <span class="num pull-right">188 转发</span>
+                                                    <span class="pull-right">1229 浏览</span>
+                                              </div>
+                                       </div>
+                                  </div>
+                            </li>
+
+                            <div class="fill"></div>
+                            <li class="clearfix">
+                                  <img src="../imgs/homePage-01.jpg">
+                                  <div class="cont">
+                                        <div class="cont-inner">
+                                              <p>生姜是日常生活中十分常见的调料，生虽然作为调味料，生姜出...</p>
+                                              <div class="cont-footer">
+                                                    <span class="">2012-10-02 15:30</span>
+                                                    <span class="num pull-right">188 转发</span>
+                                                    <span class="pull-right">1229 浏览</span>
+                                              </div>
+                                       </div>
+                                  </div>
+                            </li>
+
+                            <div class="fill"></div>
+                            <li class="clearfix">
+                                  <img src="../imgs/homePage-01.jpg">
+                                  <div class="cont">
+                                        <div class="cont-inner">
+                                              <p>生姜是日常生活中十分常见的调料，生虽然作为调味料，生姜出...</p>
+                                              <div class="cont-footer">
+                                                    <span class="">2012-10-02 15:30</span>
+                                                    <span class="num pull-right">188 转发</span>
+                                                    <span class="pull-right">1229 浏览</span>
+                                              </div>
+                                       </div>
+                                  </div>
+                             </li>
+                            <div class="fill"></div>
+                            <li class="clearfix">
+                                  <img src="../imgs/homePage-01.jpg">
+                                  <div class="cont">
+                                        <div class="cont-inner">
+                                              <p>生姜是日常生活中十分常见的调料，生虽然作为调味料，生姜出...</p>
+                                              <div class="cont-footer">
+                                                    <span class="">2012-10-02 15:30</span>
+                                                    <span class="num pull-right">188 转发</span>
+                                                    <span class="pull-right">1229 浏览</span>
+                                              </div>
+                                       </div>
+                                  </div>
+                             </li>
+                            <div class="fill"></div>
+                      </ul>
+                      <!-- 加载提示符 -->
+                      <div class="infinite-scroll-preloader">
+                           <div class="preloader"></div>
+                      </div>
+                    </div>
+
+                    <div id='t2' class="panel-box delicious-food infinite-scroll" style="padding-bottom:2rem;">
+                      <ul class="list-container">
+                            <div class="fill"></div>
+                            <li class="clearfix">
+                                  <img src="../imgs/homePage-01.jpg">
+                                  <div class="cont">
+                                        <div class="cont-inner">
+                                              <p>生姜是日常生活中十分常见的调料，生虽然作为调味料，生姜出...</p>
+                                              <div class="cont-footer">
+                                                    <span class="">2012-10-02 15:30</span>
+                                                    <span class="num pull-right">188 转发</span>
+                                                    <span class="pull-right">1229 浏览</span>
+                                              </div>
+                                       </div>
+                                  </div>
+                            </li>
+                            <div class="fill"></div>
+                            <li class="clearfix">
+                                  <img src="../imgs/homePage-01.jpg">
+                                  <div class="cont">
+                                        <div class="cont-inner">
+                                              <p>生姜是日常生活中十分常见的调料，生虽然作为调味料，生姜出...</p>
+                                              <div class="cont-footer">
+                                                    <span class="">2012-10-02 15:30</span>
+                                                    <span class="num pull-right">188 转发</span>
+                                                    <span class="pull-right">1229 浏览</span>
+                                              </div>
+                                       </div>
+                                  </div>
+                            </li>
+                            <div class="fill"></div>
+                            <li class="clearfix">
+                                  <img src="../imgs/homePage-01.jpg">
+                                  <div class="cont">
+                                        <div class="cont-inner">
+                                              <p>生姜是日常生活中十分常见的调料，生虽然作为调味料，生姜出...</p>
+                                              <div class="cont-footer">
+                                                    <span class="">2012-10-02 15:30</span>
+                                                    <span class="num pull-right">188 转发</span>
+                                                    <span class="pull-right">1229 浏览</span>
+                                              </div>
+                                       </div>
+                                  </div>
+                            </li>
+                            <div class="fill"></div>
+                            <li class="clearfix">
+                                  <img src="../imgs/homePage-01.jpg">
+                                  <div class="cont">
+                                        <div class="cont-inner">
+                                              <p>生姜是日常生活中十分常见的调料，生虽然作为调味料，生姜出...</p>
+                                              <div class="cont-footer">
+                                                    <span class="">2012-10-02 15:30</span>
+                                                    <span class="num pull-right">188 转发</span>
+                                                    <span class="pull-right">1229 浏览</span>
+                                              </div>
+                                       </div>
+                                  </div>
+                            </li>
+                            <div class="fill"></div>
+                            <li class="clearfix">
+                                  <img src="../imgs/homePage-01.jpg">
+                                  <div class="cont">
+                                        <div class="cont-inner">
+                                              <p>生姜是日常生活中十分常见的调料，生虽然作为调味料，生姜出...</p>
+                                              <div class="cont-footer">
+                                                    <span class="">2012-10-02 15:30</span>
+                                                    <span class="num pull-right">188 转发</span>
+                                                    <span class="pull-right">1229 浏览</span>
+                                              </div>
+                                       </div>
+                                  </div>
+                            </li>
+                            <div class="fill"></div>
+                            <li class="clearfix">
+                                  <img src="../imgs/homePage-01.jpg">
+                                  <div class="cont">
+                                        <div class="cont-inner">
+                                              <p>生姜是日常生活中十分常见的调料，生虽然作为调味料，生姜出...</p>
+                                              <div class="cont-footer">
+                                                    <span class="">2012-10-02 15:30</span>
+                                                    <span class="num pull-right">188 转发</span>
+                                                    <span class="pull-right">1229 浏览</span>
+                                              </div>
+                                       </div>
+                                  </div>
+                            </li>
+                            <div class="fill"></div>
+                      </ul>
+                      <!-- 加载提示符 -->
+                      <div class="infinite-scroll-preloader">
+                           <div class="preloader"></div>
+                      </div>
+                    </div>
+
+                    <div id='t3' class="panel-box delicious-food infinite-scroll" style="padding-bottom:2rem;">
+                      <ul class="list-container">
+                            <div class="fill"></div>
+                            <li class="clearfix">
+                                  <img src="../imgs/homePage-01.jpg">
+                                  <div class="cont">
+                                        <div class="cont-inner">
+                                              <p>生姜是日常生活中十分常见的调料，生虽然作为调味料，生姜出...</p>
+                                              <div class="cont-footer">
+                                                    <span class="">2012-10-02 15:30</span>
+                                                    <span class="num pull-right">188 转发</span>
+                                                    <span class="pull-right">1229 浏览</span>
+                                              </div>
+                                       </div>
+                                  </div>
+                            </li>
+                            <div class="fill"></div>
+                            <li class="clearfix">
+                                  <img src="../imgs/homePage-01.jpg">
+                                  <div class="cont">
+                                        <div class="cont-inner">
+                                              <p>生姜是日常生活中十分常见的调料，生虽然作为调味料，生姜出...</p>
+                                              <div class="cont-footer">
+                                                    <span class="">2012-10-02 15:30</span>
+                                                    <span class="num pull-right">188 转发</span>
+                                                    <span class="pull-right">1229 浏览</span>
+                                              </div>
+                                       </div>
+                                  </div>
+                            </li>
+                            <div class="fill"></div>
+                            <li class="clearfix">
+                                  <img src="../imgs/homePage-01.jpg">
+                                  <div class="cont">
+                                        <div class="cont-inner">
+                                              <p>生姜是日常生活中十分常见的调料，生虽然作为调味料，生姜出...</p>
+                                              <div class="cont-footer">
+                                                    <span class="">2012-10-02 15:30</span>
+                                                    <span class="num pull-right">188 转发</span>
+                                                    <span class="pull-right">1229 浏览</span>
+                                              </div>
+                                       </div>
+                                  </div>
+                            </li>
+                            <div class="fill"></div>
+                            <li class="clearfix">
+                                  <img src="../imgs/homePage-01.jpg">
+                                  <div class="cont">
+                                        <div class="cont-inner">
+                                              <p>生姜是日常生活中十分常见的调料，生虽然作为调味料，生姜出...</p>
+                                              <div class="cont-footer">
+                                                    <span class="">2012-10-02 15:30</span>
+                                                    <span class="num pull-right">188 转发</span>
+                                                    <span class="pull-right">1229 浏览</span>
+                                              </div>
+                                       </div>
+                                  </div>
+                            </li>
+                            <div class="fill"></div>
+                            <li class="clearfix">
+                                  <img src="../imgs/homePage-01.jpg">
+                                  <div class="cont">
+                                        <div class="cont-inner">
+                                              <p>生姜是日常生活中十分常见的调料，生虽然作为调味料，生姜出...</p>
+                                              <div class="cont-footer">
+                                                    <span class="">2012-10-02 15:30</span>
+                                                    <span class="num pull-right">188 转发</span>
+                                                    <span class="pull-right">1229 浏览</span>
+                                              </div>
+                                       </div>
+                                  </div>
+                            </li>
+                            <div class="fill"></div>
+                            <li class="clearfix">
+                                  <img src="../imgs/homePage-01.jpg">
+                                  <div class="cont">
+                                        <div class="cont-inner">
+                                              <p>生姜是日常生活中十分常见的调料，生虽然作为调味料，生姜出...</p>
+                                              <div class="cont-footer">
+                                                    <span class="">2012-10-02 15:30</span>
+                                                    <span class="num pull-right">188 转发</span>
+                                                    <span class="pull-right">1229 浏览</span>
+                                              </div>
+                                       </div>
+                                  </div>
+                            </li>
+                            <div class="fill"></div>
+                      </ul>
+                      <!-- 加载提示符 -->
+                      <div class="infinite-scroll-preloader">
+                           <div class="preloader"></div>
+                      </div>
+                    </div>
+                    <div class="panel-box delicious-food">
+                      <ul class="list-container">
+                            <div class="fill"></div>
+                            <li class="clearfix">
+                                  <img src="../imgs/homePage-01.jpg">
+                                  <div class="cont">
+                                        <div class="cont-inner">
+                                              <p>生姜是日常生活中十分常见的调料，生虽然作为调味料，生姜出...</p>
+                                              <div class="cont-footer">
+                                                    <span class="">2012-10-02 15:30</span>
+                                                    <span class="num pull-right">188 转发</span>
+                                                    <span class="pull-right">1229 浏览</span>
+                                              </div>
+                                       </div>
+                                  </div>
+                            </li>
+                            <div class="fill"></div>
+                      </ul>
+                    </div>
+
+                </div>
+
+
+           </div>
+
+           <!-- 工具栏 -->
+           <nav class="bar bar-tab">
+               <a class="tab-item external active" href="homePage.html">
+                   <span class="icon iconfont icon-tuiguangruanwen"></span>
+                   <span class="tab-label">推广学习</span>
+               </a>
+               <a class="tab-item external" href="findList.html">
+                   <span class="icon icon-browser"></span>
+                   <span class="tab-label">甩单找单</span>
+               </a>
+               <a class="tab-item external" href="channel.html">
+                   <span class="icon icon-share"></span>
+                   <span class="tab-label">找渠道</span>
+               </a>
+               <a class="tab-item external" href="myself.html">
+                   <span class="icon icon-me"></span>
+                   <span class="tab-label">我的</span>
+               </a>
+           </nav>
+       </div>
+
+   </div>
+
+
+    <script type='text/javascript' src='../js/articleExtension.js'></script>
+    <script type='text/javascript' src='http://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='../js/articleExtension-02.js'></script>
+    <!-- <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script> -->
+  </body>
+</html>

@@ -1,0 +1,27 @@
+.out{
+  margin-top: .5rem;
+  height: 2.2rem;
+  padding-right: .5rem;
+  padding-left: .5rem;
+
+}
+.resetMargin{
+  margin: .75rem 0;
+}
+.explain{
+  margin: 1em 0 1em .5rem;
+  font-size: .7rem;
+  color: #000;
+  line-height: 2em;
+  letter-spacing:.15em;
+}
+.explain span{
+  font-weight: 600;
+}
+.img{
+  width: 100%;
+}
+.img img{
+  width: 100%;
+  height: auto;
+}

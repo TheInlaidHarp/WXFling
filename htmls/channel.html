@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>找渠道</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <link rel="stylesheet" href="../css/channel.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+
+    <script type='text/javascript' src='../js/findList.js'></script>
+
+  </head>
+  <body>
+    <!-- page集合的容器，里面放多个平行的.page，其他.page作为内联页面由路由控制展示 -->
+   <div class="page-group">
+       <!-- 单个page ,第一个.page默认被展示-->
+       <div class="page" id="page-infinite-scroll-bottom">
+          <!-- 标题栏 -->
+          <header class="bar bar-nav marginLittle" id="city" data-type='province'>
+              <a class="pull-left event"><span class="span name">重庆市</span><span class="icon icon-down"></span></a>
+              <a class="pull-right" href="edit.html"><span class="icon icon-edit "></span><span class="span bubble">我要入住</span></a>
+
+              <div class="select" style="display:none">
+                    <h3></h3>
+                    <span>北京市</span><span>北京市</span><span>北京市</span><span>北京市</span><span>北京市</span><span>北京市</span><span>北京市</span>
+              </div>
+
+              <div class="selectTwo" style="display:none">
+                  <h3></h3>
+                  <div class="biaoti">
+                      <a href="javascript:;">北京市</a>
+                      <a href="javascript:;" class="color">返回</a>
+                  </div>
+                  <span>北京市</span><span>北京市</span><span>北京市</span><span>北京市</span><span>北京市</span>
+              </div>
+          </header>
+
+           <!-- 这里是页面内容区 -->
+           <div class="content infinite-scroll">
+
+                    <div class="list-block special">
+                        <ul class="list-container">
+                            <a href="orderDetails.html">
+                                <li class="list">
+                                    <h4>糖果 <sup>V1</sup><small>小牛普惠 <sup>认证会员</sup></small></h4>
+
+                                    <p><span class="keyword">信贷</span><span class="keyword">无资产</span></p>
+
+                                    <p>客户开砖厂的！想贷几百万！厂房是租用地自建厂房！所以营业执照都有！</p>
+
+                                    <div class="time">
+                                        <span>03月17</span><span class="marginBig">13:45</span>
+                                        <span class="blue">5个工作日</span>
+                                        <span><strong>11</strong> 浏览</span>
+                                    </div>
+
+                                    <div class="positionUp common">返点：1.5%</div>
+                                    <div class="positionDown common">月息：2.3%</div>
+                                </li>
+                            </a>
+                                <div class="nothing"></div>
+                                <li class="list">
+                                    <h4>糖果 <sup>V1</sup><small>小牛普惠 <sup>认证会员</sup></small></h4>
+
+                                    <p><span class="keyword">信贷</span><span class="keyword">无资产</span></p>
+
+                                    <p>客户开砖厂的！想贷几百万！厂房是租用地自建厂房！所以营业执照都有！</p>
+
+                                    <div class="time">
+                                        <span>03月17</span><span class="marginBig">13:45</span>
+                                        <span class="blue">5个工作日</span>
+                                        <span><strong>11</strong> 浏览</span>
+                                    </div>
+
+                                    <div class="positionUp common">返点：1.5%</div>
+                                    <div class="positionDown common">月息：2.3%</div>
+                                </li>
+                                <div class="nothing"></div>
+                                <li class="list">
+                                    <h4>糖果 <sup>V1</sup><small>小牛普惠 <sup>认证会员</sup></small></h4>
+
+                                    <p><span class="keyword">信贷</span><span class="keyword">无资产</span></p>
+
+                                    <p>客户开砖厂的！想贷几百万！厂房是租用地自建厂房！所以营业执照都有！</p>
+
+                                    <div class="time">
+                                        <span>03月17</span><span class="marginBig">13:45</span>
+                                        <span class="blue">5个工作日</span>
+                                        <span><strong>11</strong> 浏览</span>
+                                    </div>
+
+                                    <div class="positionUp common">返点：1.5%</div>
+                                    <div class="positionDown common">月息：2.3%</div>
+                                </li>
+                                <div class="nothing"></div>
+                                <li class="list">
+                                    <h4>糖果 <sup>V1</sup><small>小牛普惠 <sup>认证会员</sup></small></h4>
+
+                                    <p><span class="keyword">信贷</span><span class="keyword">无资产</span></p>
+
+                                    <p>客户开砖厂的！想贷几百万！厂房是租用地自建厂房！所以营业执照都有！</p>
+
+                                    <div class="time">
+                                        <span>03月17</span><span class="marginBig">13:45</span>
+                                        <span class="blue">5个工作日</span>
+                                        <span><strong>11</strong> 浏览</span>
+                                    </div>
+
+                                    <div class="positionUp common">返点：1.5%</div>
+                                    <div class="positionDown common">月息：2.3%</div>
+                                </li>
+                                <div class="nothing"></div>
+
+
+                        </ul>
+                    </div>
+                    <!-- 加载提示符 -->
+                <div class="infinite-scroll-preloader">
+                    <div class="preloader"></div>
+                </div>
+
+           </div>
+
+           <!-- 工具栏 -->
+           <nav class="bar bar-tab">
+               <a class="tab-item external " href="homePage.html">
+                   <span class="icon iconfont icon-tuiguangruanwen"></span>
+                   <span class="tab-label">推广学习</span>
+               </a>
+               <a class="tab-item external" href="findList.html">
+                   <span class="icon icon-browser"></span>
+                   <span class="tab-label">甩单找单</span>
+               </a>
+               <a class="tab-item external active" href="channel.html">
+                   <span class="icon icon-share"></span>
+                   <span class="tab-label">找渠道</span>
+               </a>
+               <a class="tab-item external" href="myself.html">
+                   <span class="icon icon-me"></span>
+                   <span class="tab-label">我的</span>
+               </a>
+           </nav>
+       </div>
+
+   </div>
+
+   <script type='text/javascript' src='http://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+   <script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+   <script type='text/javascript' src='../js/demos.js' charset='utf-8'></script>
+
+   <script>
+          //  三级联动
+           $('#city .event').on('click',function() {
+                 // 点击显示 隐藏一级联动
+                if($('.select').css('display') == 'block'){
+                  //清空所有层级标签内所有信息，并隐藏标签；
+                    // $('.select').hide(1000);
+                    $('.select').css('display','none');
+                    $('.select').html('');
+                    $('.selectTwo').html('');
+
+                }else{
+
+                     //  console.log($('.select').html())
+                    // 防止越级点击内容未清除  再次清除一次；
+                     $('.select').html('');
+                     $('.selectTwo').html('');
+                    // 显示第一层级标签
+                    //  $('.select').show(1000);
+                     $('.select').css('display','block');
+                    // 一级标签的箭头图形；
+                     $('.select').append('<h3>' + '</h3>')
+                     // 	console.log(ChinaCity.getProvince())
+
+                    // 循环加载 内容
+                     var len = ChinaCity.getProvince().length;
+
+                     for(var i = 0; i < len; i ++) {
+
+                           $('.select').append('<span>' + ChinaCity.getProvince()[i] + '</span>');
+
+                     }
+
+                 }
+           });
+          // 一级标签的点击事件
+           $('.select').on('click','span',function() {
+                  // 修改显示的内容
+                 $('#city .name').html($(this).html());//.data('type','province');
+                  // 清空一级标签  并隐藏标签
+                 $('.select').html('');
+                 $('.select').css('display','none');
+                  // console.log( $('.select').css('display'))
+                  // 防止越级点击内容未清除  再次清空二级标签，并显示
+                 $('.selectTwo').html('');
+                 $('.selectTwo').css('display','block');
+                  // 添加固定的样式
+                   $('.selectTwo').append('<h3>' + '</h3>' + '<div class="biaoti">'
+                        + '<a href="javascript:;">' + $(this).html() + '</a>'
+                        + '<a href="javascript:;" class="color">' + '返回' + '</a>'
+                    + '</div>')
+                  // 循环加载 内容
+                  var len = ChinaCity.getCity($(this).html()).length;
+
+                  for(var i = 0; i < len; i ++) {
+
+                           $('.selectTwo').append('<span>' + ChinaCity.getCity($(this).html())[i] + '</span>');
+                  }
+
+                         return false;
+               })
+              // 二级标签的点击事件
+          // 二级标签的点击事件
+           $('.selectTwo').on('click','span',function() {
+                  // 修改显示的内容  清空二级标签  并隐藏标签
+                   $('#city .name').html($(this).html());
+                   $('.selectTwo').css('display','none');
+                   $('.selectTwo').html('');
+
+                  return false;
+           });
+           // 返回按钮的点击事件
+           $('.selectTwo').on('click','.color',function() {
+
+               // 防止越级点击内容未清除  再次清除一次；
+                $('.select').html('');
+                $('.selectTwo').html('');
+               // 显示第一层级标签
+               //  $('.select').show(1000);
+                $('.select').css('display','block');
+               // 一级标签的箭头图形；
+                $('.select').append('<h3>' + '</h3>')
+                // 	console.log(ChinaCity.getProvince())
+
+               // 循环加载 内容
+                var len = ChinaCity.getProvince().length;
+
+                for(var i = 0; i < len; i ++) {
+
+                      $('.select').append('<span>' + ChinaCity.getProvince()[i] + '</span>');
+
+                }
+
+           });
+
+   </script>
+
+
+  </body>
+</html>

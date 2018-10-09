@@ -1,0 +1,149 @@
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+sup { top: -0.5em; color:red;}
+small{
+  color: #aaa;
+  font-size: .5rem;
+}
+h4{
+  margin: 0;
+  padding-top: .5rem;
+}
+.special{
+  margin-top: .5rem;
+}
+.nothing{
+  width: 100%;
+  height: .5rem;
+  background-color: #efeff4;
+}
+.marginLittle{
+  background-color: #0894ec;
+}
+.marginLittle a{
+  color: #fff;
+  font-size: .7rem;
+}
+.marginLittle .select,.marginLittle .selectTwo{
+  position: absolute;
+  z-index: 2;
+  top:2.7rem;
+  left:.3rem;
+  background-color: #8e8e8e;
+  padding: .5rem .1rem .1rem;
+  width: 96%;
+  border-radius: 4px;
+}
+.content .solution::before{
+  /*解决div 后面的白线问题*/
+  height: 0px;
+}
+.marginLittle .select h3,.marginLittle .selectTwo h3{
+  margin: 0;
+  padding: 0;
+  border:.3rem solid #f0f0f0;
+  border-top: .1rem solid #f0f0f0;
+  border-bottom: .3rem solid #00adef;
+  position:absolute;
+  top: -.45rem;
+  left:.5rem;
+}
+.marginLittle .select span ,.marginLittle .selectTwo span{
+  display: block;
+  float: left;
+  width: 25%;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  color:#fff;
+  font-size: .65rem;
+  font-weight: 600;
+  border-radius: 3px;
+}
+.marginLittle .select span:hover,.marginLittle .selectTwo span:hover{
+  background-color: #fff;
+  color: #00adef;
+}
+.marginLittle .selectTwo{
+  margin-top: 0;
+  padding: 0;
+}
+.marginLittle .selectTwo .biaoti{
+  width: 100%;
+  height: 2rem;
+  background-color: #00adef;
+  line-height: 2rem;
+  border-bottom: 1px dotted #fff;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.marginLittle .selectTwo .biaoti a{
+  margin-left: .5rem;
+}
+.marginLittle .selectTwo .biaoti a.color{
+  margin-left: 11rem;
+  color: #000;
+}
+
+
+
+
+.list-container .list{
+  position: relative;
+  padding-left:.5rem;
+  padding-bottom: .5rem;
+}
+.list-container .list .common{
+  width: 25%;
+  height: 1rem;
+  color: #fff;
+  text-align: center;
+  line-height: 1rem;
+  font-size: .7rem;
+}
+.list-container .list .positionUp{
+  position: absolute;
+  top: .3rem;
+  right: .5rem;
+  background-color: #00adef;
+}
+.list-container .list .positionDown{
+  position: absolute;
+  top: 1.5rem;
+  right: .5rem;
+  background-color: #ff2d2d;
+}
+.list-container .list p{
+  margin-top: 0;
+  font-size: .6rem;
+  color: #666;
+  font-weight: 700;
+}
+.list-container .list .keyword{
+  color: #000;
+  font-weight:normal;
+  font-size: .7rem;
+  margin-right: .5em;
+}
+.list-container .list .time{
+  width: 100%;
+  height: 1rem;
+}
+.list-container .list .time span{
+  color: #aaa;
+  font-size: .6rem;
+  margin-right: .3rem;
+}
+.list-container .list .time span.blue{
+  color: #00adef;
+}
+.list-container .list .time span.marginBig{
+  margin-right:5.2rem;
+}
+.list-container .list .time a{
+  font-size: .8rem;
+  margin-right: .8rem;
+}

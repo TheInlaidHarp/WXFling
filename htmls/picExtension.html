@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>图片推广</title>
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<link rel="stylesheet" href="../css/picExtension.css">
+<link rel="stylesheet" href="../css/iconfont.css">
+<link rel="stylesheet" href="../font-2/iconfont.css">
+
+<script src="../js/jquery-3.1.1.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="../js/rem.js"></script>
+
+</head>
+<body>
+
+  <p class="tittle">点击下列图片 - 输入属于你想要的广告</p>
+
+  <div class="box">
+      <a href="creatPic.html"><img class="img" src="../imgs/pic-3.jpg" /></a>
+      <!-- <div class="desc">Description</div> -->
+  </div>
+  <div class="box">
+    <a href="creatPic.html"><img class="img" src="../imgs/pic-1.jpg" /></a>
+  </div>
+  <div class="box">
+      <a href="creatPic.html"><img class="img" src="../imgs/pic-2.jpg" /></a>
+  </div>
+  <div class="box">
+      <a href="creatPic.html"><img class="img" src="../imgs/pic-3.jpg" /></a>
+  </div>
+  <div class="box">
+      <a href="creatPic.html"><img class="img" src="../imgs/pic-3.jpg" /></a>
+  </div>
+  <div class="box">
+    <a href="creatPic.html"><img class="img" src="../imgs/pic-1.jpg" /></a>
+  </div>
+  <div class="box">
+      <a href="creatPic.html"><img class="img" src="../imgs/pic-2.jpg" /></a>
+  </div>
+  <div class="box">
+      <a href="creatPic.html"><img class="img" src="../imgs/pic-3.jpg" /></a>
+  </div>
+  <div class="box">
+    <a href="creatPic.html"><img class="img" src="../imgs/pic-1.jpg" /></a>
+  </div>
+  <div class="box">
+      <a href="creatPic.html"><img class="img" src="../imgs/pic-2.jpg" /></a>
+  </div>
+  <div class="box">
+      <a href="creatPic.html"><img class="img" src="../imgs/pic-3.jpg" /></a>
+  </div>
+  <div class="box">
+    <a href="creatPic.html"><img class="img" src="../imgs/pic-1.jpg" /></a>
+  </div>
+  <div class="box">
+      <a href="creatPic.html"><img class="img" src="../imgs/pic-2.jpg" /></a>
+  </div>
+  <div class="box">
+      <a href="creatPic.html"><img class="img" src="../imgs/pic-3.jpg" /></a>
+  </div>
+  <div class="box">
+    <a href="creatPic.html"><img class="img" src="../imgs/pic-1.jpg" /></a>
+  </div>
+
+  </div>
+
+  <!-- 工具栏 -->
+  <nav class="footer">
+      <a class="active" href="homePage.html">
+          <p class="iconfont icon-tuiguangruanwen"></p>
+          <span class="tab-label">推广学习</span>
+      </a>
+      <a class="" href="findList.html">
+          <p class="iconfont icon-diqiu"></p>
+          <span class="tab-label">甩单找单</span>
+      </a>
+      <a class="" href="channel.html">
+          <p class="iconfont icon-woyaotuiguang"></p>
+          <span class="tab-label">找渠道</span>
+      </a>
+      <a class="" href="myself.html">
+          <p class="iconfont icon-wode big"></p>
+          <span class="tab-label">我的</span>
+      </a>
+  </nav>
+
+
+<script type="text/javascript">
+      window.onload = function () {
+
+          // 获取所有盒子，判断一行可以放几个盒子
+          var boxArr = $('.box'),
+              num = Math.floor(document.body.clientWidth / boxArr.eq(0).outerWidth(true)),
+              columnHeightArr = [];
+          // 定义数字 让数组的长度等于每行盒子的个数；
+          columnHeightArr.length = num;
+
+          function lazyLoad() {
+
+              boxArr = $('.box');
+              // 遍历数组
+              boxArr.each(function(index, item) {
+                　　if (index < num) {
+                       // 如果盒子的个数小于数组的长度  直接存放并记录存放的高度；
+                　　　　columnHeightArr[index] = $(item).position().top + $(item).outerHeight(true);
+
+                　　} else {
+                        //  判断高度最小的高度
+                　　　　var minHeight = Math.min.apply(null, columnHeightArr),
+                           minHeightIndex = $.inArray(minHeight, columnHeightArr);
+
+                           console.log(minHeight);
+                           console.log(minHeightIndex);
+
+                        // 添加定位
+                　　　　$(item).css({
+                       　　position: 'absolute',
+                       　　top: minHeight,
+                       　　left: boxArr.eq(minHeightIndex).position().left
+                       });
+
+                       // 同步高度
+                　　　　columnHeightArr[minHeightIndex] += $(item).outerHeight(true);
+
+                　　}
+              });
+
+          }
+          function scrollLoad() {
+
+            　　var viewHeight = $(window).scrollTop() + $(window).height(),
+                    minHeight = Math.min.apply(null, columnHeightArr);
+                    // console.log(viewHeight);
+                    // console.log(columnHeightArr);
+            　　if (viewHeight >= minHeight) {
+
+                    for(var i = 0; i<10;i++){
+                      $("body").append('<div class="box">' + '<a href="creatPic.html">' +
+                                              '<img class="img" src="../imgs/pic-1.jpg" />' + '</a>'+
+                                              //  '<div class="desc">Description</div>' +
+                                            '</div>');
+                      $("body").append('<div class="box">' + '<a href="creatPic.html">' +
+                                               '<img class="img" src="../imgs/pic-3.jpg" />' + '</a>'+
+                                              //  '<div class="desc">Description</div>' +
+                                            '</div>');
+                      $("body").append('<div class="box">' + '<a href="creatPic.html">' +
+                                               '<img class="img" src="../imgs/pic-5.jpg" />' + '</a>'+
+                                              //  '<div class="desc">Description</div>' +
+                                            '</div>');
+                    }
+            　　}
+            }
+
+          lazyLoad();
+
+          $(window).scroll(function() {
+              scrollLoad();
+              lazyLoad();
+          });
+      }
+
+</script>
+
+
+</body>
+</html>

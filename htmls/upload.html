@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>上传信息</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+
+    <link rel="stylesheet" href="../css/commonReset.css">
+    <link rel="stylesheet" href="../css/upload.css">
+    <script type="text/javascript">
+        ;(function () {
+          var iWidth = document.documentElement.clientWidth;
+          var fontSize = iWidth / 32 ;
+          document.documentElement.style.fontSize = fontSize + 'px';
+        })();
+    </script>
+  </head>
+  <body>
+      <header class="tittle">
+              <p>上传身份信息</p>
+      </header>
+      <p class="prompt">*温馨提示：单张图片大小不能超过5兆！</p>
+      <div class="list">
+            <form class="" action="" method="post">
+                    <ul>
+                        <li class="imgbox pull-left">
+                              <div class="imgnum">
+                                  <input type="file" class="filepath" />
+                                  <span class="close">×</span>
+                                  <img src="../imgs/upload-01.jpg" class="img1" />
+                                  <img src="" class="img2" style="display:none"/>
+                                  <p class="explain">上传身份证正面</p>
+                              </div>
+                        </li>
+                        <li  class="imgbox pull-right">
+                              <div class="imgnum">
+                                  <input type="file" class="filepath" />
+                                  <span class="close">×</span>
+                                  <img src="../imgs/upload-02.jpg" class="img1" />
+                                  <img src="" class="img2" style="display:none"/>
+                                  <p class="explain">手持证件照片</p>
+                              </div>
+                        </li>
+                        <li class="imgbox pull-left">
+                              <div class="imgnum">
+                                  <input type="file" class="filepath" />
+                                  <span class="close">×</span>
+                                  <img src="../imgs/upload-02.jpg" class="img1" />
+                                  <img src="" class="img2" style="display:none"/>
+                                  <p class="explain">上传名片正面</p>
+                              </div>
+                        </li>
+                        <li  class="imgbox pull-right">
+                              <div class="imgnum">
+                                  <input type="file" class="filepath" />
+                                  <span class="close">×</span>
+                                  <img src="../imgs/upload-02.jpg" class="img1" />
+                                  <img src="" class="img2" style="display:none"/>
+                                  <p class="explain">上传名片反面</p>
+                              </div>
+                        </li>
+                    </ul>
+
+                    <div>
+                      <button type="submit" class="startUpload" name="button">上 传</button>
+                    </div>
+
+            </form>
+            <p style="color:red;margin-top:1rem">*请按照下图规范上传</p>
+
+            <div class="footer">
+                <img src="../imgs/upload-03.jpg" alt="">
+            </div>
+
+      </div>
+
+
+
+      </div>
+
+    <script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+
+    <script type="text/javascript">
+
+        $(function() {
+            $(".filepath").on("change",function() {
+                // alert($('.imgbox').length);
+                var srcs = getObjectURL(this.files[0]);   //获取路径
+                $(this).nextAll(".img1").hide();   //this指的是input
+                $(this).nextAll(".img2").show();  //fireBUg查看第二次换图片不起做用
+                $(this).nextAll('.close').show();   //this指的是input
+                $(this).nextAll(".img2").attr("src",srcs);    //this指的是input
+                $(this).val('');    //必须制空
+                $(".close").on("click",function() {
+                    $(this).hide();     //this指的是span
+                    $(this).nextAll(".img2").hide();
+                    $(this).nextAll(".img1").show();
+                })
+            })
+        })
+
+
+
+
+      function getObjectURL(file) {
+          var url = null;
+          if (window.createObjectURL != undefined) {
+              url = window.createObjectURL(file)
+          } else if (window.URL != undefined) {
+              url = window.URL.createObjectURL(file)
+          } else if (window.webkitURL != undefined) {
+              url = window.webkitURL.createObjectURL(file)
+          }
+          return url
+      };
+
+    </script>
+  </body>
+</html>

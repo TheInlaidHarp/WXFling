@@ -1,0 +1,59 @@
+ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.contenTittle{
+  width: 100%;
+  height: 1.5rem;
+  background-color: #ddd;
+  font-size: 0;
+  text-align: center;
+  line-height: 1.5rem;
+}
+.contenTittle span{
+  font-size: .5rem;
+  color:#999;
+}
+.resetMar{
+  margin: 0;
+}
+.resetMar .item-inner{
+  font-size: .7rem;
+}
+.resetMar .item-input input{
+  font-size: .7rem;
+}
+.resetMar .getCodeParent{
+  position: relative;
+}
+.resetMar .getCodeParent .getCode{
+  position: absolute;
+  top: .4rem;
+  right: .2rem;
+  width: 4rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  border: 1px solid #f00;
+  font-size: .5rem;
+  color: #f00;
+  border-radius: 2px;
+}
+.fill{
+  width: 100%;
+  height: 1rem;
+}
+.checked{
+  width: 100%;
+  padding-left: 1.5rem;
+  font-size: .6rem;
+}
+.checked a{
+  color:#f00;
+}
+.submit a.button.button-fill{
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 1rem;
+}

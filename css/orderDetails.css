@@ -1,0 +1,120 @@
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+sup { top: -0.5em; color:red;}
+small{
+  color: #aaa;
+  font-size: .5rem;
+}
+h4{
+  margin: 0;
+  padding-top: .5rem;
+}
+.tittle{
+  width: 100%;
+  height: 2.5rem;
+  background-color: #00adef;
+  text-align: center;
+  line-height: 2.5rem;
+  color: #fff;
+  font-size: 1rem
+}
+.special{
+  margin-top: .5rem;
+  margin-bottom: .1rem;
+}
+.nothing{
+  width: 100%;
+  height: .5rem;
+  background-color: #efeff4;
+}
+.list-container .list{
+  position: relative;
+  padding-left:.5rem;
+  padding-bottom: .5rem;
+}
+.list-container .list .common{
+  width: 25%;
+  height: 1rem;
+  color: #fff;
+  text-align: center;
+  line-height: 1rem;
+  font-size: .7rem;
+}
+.list-container .list .positionUp{
+  position: absolute;
+  top: .3rem;
+  right: .5rem;
+  background-color: #00adef;
+}
+.list-container .list .positionDown{
+  position: absolute;
+  top: 1.5rem;
+  right: .5rem;
+  background-color: #ff2d2d;
+}
+.list-container .list p{
+  margin-top: 0;
+  font-size: .6rem;
+  color: #666;
+  font-weight: 700;
+}
+.list-container .list .keyword{
+  color: #000;
+  font-weight:normal;
+  font-size: .7rem;
+  margin-right: .5em;
+}
+.list-container .list .time{
+  width: 100%;
+  height: 1rem;
+}
+.list-container .list .time span{
+  color: #aaa;
+  font-size: .6rem;
+  margin-right: .3rem;
+}
+.list-container .list .time span.marginBig{
+  margin-left:9rem;
+}
+.telphone{
+  width: 100%;
+  padding-left: .5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  background-color: #fff;
+}
+.telphone .phone{
+  color: #00adef;
+  margin-right: .3rem;
+}
+.telphone .number{
+  color: #000;
+}
+.telphone .but{
+  border: 0;
+  border-radius: 3px;
+  background-color: #00adef;
+  line-height: 1.8rem;
+  color: #fff;
+  margin-left: 4rem;
+  cursor: pointer;
+  /*letter-spacing: 0em;*/
+}
+.img{
+  width: 100%;
+  padding: 1rem .5rem;
+  background-color: #efeff4;
+}
+.img img{
+  width: 100%;
+  height: auto;
+}
+.submit{
+  padding: 0 .5rem;
+}
+.submit p{
+    margin: 0;
+}

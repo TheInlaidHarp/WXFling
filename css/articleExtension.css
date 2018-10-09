@@ -1,0 +1,107 @@
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: 0;
+}
+p{
+  margin:0 0 1em 0;
+}
+.clearfix::before,
+.clearfix::after{
+  display: table;
+  content: '';
+}
+.clearfix::after{
+  clear: both;
+}
+.content .tagPagShow,.content .tagPagHid{
+  width: 100%;
+  background-color:#313743;
+}
+.content .tagPagHid{
+  display: none;
+}
+.content .tagPagShow a{
+  display: block;
+  float: left;
+  width: 20%;
+  text-align: center;
+  height: 2.2rem;
+  line-height: 2.2rem;
+  color: #fff;
+  font-size: .8rem;
+}
+.content a.more span{
+  color: #0894ec;
+}
+.content .tagPagHid a{
+  display: block;
+  float: left;
+  width: 25%;
+  text-align: center;
+  height: 2.2rem;
+  line-height: 2.2rem;
+  color: #fff;
+  font-size: .8rem;
+}
+.underline{
+  border-bottom: 1px solid #fff;
+}
+.content .resetpadding{
+  margin: 0;
+  padding: 0 .5rem;
+}
+.panel-box {
+  overflow: hidden;
+  display: none;
+}
+.panel-box.delicious-food.show{
+  display: block;
+}
+.delicious-food ul {
+  padding-bottom: .1rem;
+  font-size: 0;
+}
+
+.delicious-food li {
+  padding-top: .5rem;
+  padding-bottom: .2rem;
+}
+.delicious-food img {
+  position: relative;
+  z-index: 1;
+  float: left;
+  width: 3rem;
+  margin-right: -3rem;
+  margin-top: 1em;
+}
+.delicious-food .cont {
+  float: right;
+  width: 100%;
+  font-size:0;
+  margin-bottom: .8rem;
+}
+.delicious-food .cont-inner {
+  margin-left: 3.4rem;
+}
+.delicious-food .cont p {
+  font-size: .6px;
+  color: #6f6f6f;
+}
+.delicious-food .cont-footer {
+  font-size: 12px;
+  color: #909090;
+}
+.delicious-food .cont-footer span{
+  margin-right: .5rem;
+}
+.delicious-food .cont-footer .num{
+  margin-right: 0;
+}
+
+
+.fill{
+  width: 100%;
+  height: .3rem;
+  background-color: #313743;
+}

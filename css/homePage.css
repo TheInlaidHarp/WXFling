@@ -1,0 +1,95 @@
+.clearfix::before,
+.clearfix::after{
+  display: table;
+  content: '';
+}
+.clearfix::after{
+  clear: both;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+p{
+  margin: 0
+}
+
+.container{
+ width:100%;
+ position: relative;
+}
+.container .pic li {
+     display: none;
+     overflow: hidden;
+}
+.container .pic li img{
+  width: 100%;
+  height: 8rem;
+}
+.container .pic li.active {
+     display: block;
+}
+.container .description {
+     position: absolute;
+     left: 40%;
+     bottom: .6rem;
+ }
+ .container .description li{
+   float:left;
+   width:.5rem;
+   height:.5rem;
+   margin:0 .25rem;
+   border:1px solid #666;
+   border-radius:50%;
+   background-color:#fff;
+ }
+.container .description .red{
+   background-color:red;
+   border:1px solid #ff0000;
+}
+.imgnav{
+  width: 100%;
+  height: 45%;
+  padding:.6rem 0;
+  margin-top: .3rem;
+  background-color: #000;
+}
+.imgnav ul{
+  background-color: #efeff4;
+  padding-bottom: .8rem;
+  padding-top: .8rem;
+}
+.imgnav li{
+  float: left;
+  height: 3rem;
+  width: 25%;
+  display: block;
+  text-align: center;
+  margin-bottom: .3rem;
+  font-size: .6rem;
+}
+.imgnav li a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #333;
+}
+.imgnav li span{
+  font-size: 1.5rem;
+}
+.listable h3{
+  text-align: center;
+  /*margin: .3rem 0 0 0;*/
+}
+.listable .out span{
+  font-size: .6rem;
+  color:#666;
+  margin-bottom: 1.3rem;
+}
+.listable .out .num{
+  color: #f00;
+  font-size: .8rem;
+  font-weight: 600;
+  opacity: .8;
+}
